@@ -1,0 +1,25 @@
+.jumbotron-style {
+	background-color: #323232;
+	color: #fff;
+	padding: 50px;
+}
+
+.jumbotron img {
+	height: 36px ;
+	vertical-align: middle;
+}
+
+.table-style {
+	margin-top: 20px; 
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover {
+    background-color: #76bdff;
+}
+
+.footer-style {
+	margin-top: 30px;
+	background-color: #323232;
+	color: #fff;
+	padding: 50px;
+}

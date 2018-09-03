@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Coding Challenge</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-style"> 
+    <div class="row">
+      <div class= "col-md-12">
+        <h1> <img alt="AND Digital" src="https://static.andigital.com/new-logos/ANDigital_LOGO_LONG_RGB_ON_WHITE.png"> Candidates </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class= "col-md-12">
+        <p> List of all candidates applying for 2019 Graduate Positions. </p>
+        <p> Filter individuals by particular skills. </p>
+      </div>
+    </div>
+  </div>
+  <div class="container container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2> Demo Table Of Candidates </h2>
+        <table class="table table-striped table-hover table-style" id="candidates-example">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cirpo</td>
+              <td>JavaScript, Docker</td>
+            </tr>
+            <tr>
+              <td>Louis</td>
+              <td>Java, AEM</td>
+            </tr>
+            <tr>
+              <td>Nermin</td>
+              <td>.NET, Azure</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-md-8 col-md-offset-2">   
+        <h2> Javascript Candidates </h2>
+        <div id="filtered-candidates"> </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2> Find A Candidate </h2>
+        <div class="input-group">
+          <span class="input-group-addon"> <i class="glyphicon glyphicon-search"> </i> </span>
+          <input class="form-control" type="text" id="search-key" onkeyup="searchCandidate()" placeholder="I need someone with experience in...">
+        </div>
+        <div id="all-candidates"> 
+          <script src="js/index.js"> </script>
+        </div>    
+      </div>    
+   </div>
+  </div>
+  <footer class="page-footer footer-style text-center">
+    <p> AND Digital | Coding Challenge 2018 </p>
+  </footer>
+</body>
+</html>
